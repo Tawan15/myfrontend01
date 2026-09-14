@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้ารวมเมนูหลัก</title>
+    <style>
+        /* ตั้งค่าพื้นฐานสำหรับหน้าเว็บ */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* กล่องคอนเทนเนอร์ตรงกลางหน้าจอ */
+        .menu-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .menu-container h2 {
+            margin-top: 0;
+            margin-bottom: 24px;
+            color: #1f2937;
+        }
+
+        /* การจัดเรียงปุ่ม */
+        .menu-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        /* ตกแต่งปุ่มลิงก์ */
+        .menu-link {
+            text-decoration: none;
+            background-color: #3b82f6;
+            color: white;
+            padding: 16px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* เอฟเฟกต์ตอนชี้เมาส์ */
+        .menu-link:hover {
+            background-color: #2563eb;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+        }
+
+        /* ชื่อหัวข้อของแต่ละปุ่ม */
+        .link-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* คำอธิบายย่อยของแต่ละปุ่ม */
+        .link-desc {
+            font-size: 14px;
+            color: #bfdbfe;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">
+        <h2>6619410021 Tawan Rattanawimol</h2>
+        
+        <div class="menu-list">
+            <!-- ปุ่มที่ 1 -->
+            <a href="index1.html" class="menu-link">
+                <span class="link-title">(Index 1)</span>
+            </a>
+
+            <!-- ปุ่มที่ 2 -->
+            <a href="index2.html" class="menu-link">
+                <span class="link-title">(Index 2)</span>
+            </a>
+
+            <!-- ปุ่มที่ 3 -->
+            <a href="index3.html" class="menu-link">
+                <span class="link-title">(Index 3)</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
